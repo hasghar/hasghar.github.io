@@ -90,10 +90,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Hassan Jameel Asghar"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "I am new to this."
+  location         : "Sydney, Australia."
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
