@@ -92,7 +92,7 @@ analytics:
 author:
   name             : "Hassan Jameel Asghar"
   avatar           : "/assets/images/photo.jpg"
-  bio              : "I am new to this."
+  bio              : "<i>I am a researcher in privacy, cryptography and information security. I am a lecturer at Macquarie University and a Research Scientist at Data61, CSIRO.</i>"
   location         : "Sydney, Australia."
   email            :
   uri              :
