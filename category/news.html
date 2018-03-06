@@ -1,0 +1,11 @@
+---
+layout: category
+author_profile: true
+permalink: /news/
+title: News
+category: news
+---
+
+{% for post in site.categories.news %}
+  {{ post.output }}
+{% endfor %}
