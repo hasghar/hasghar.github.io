@@ -7,6 +7,14 @@ category: blog
 ---
 <h1>All Blog Posts</h1>
 
-{% for post in site.categories.blog %}
-  {{ post.output }}
-{% endfor %}
+<ul>
+  {% for post in site.categories.blog %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+#{% for post in site.categories.blog %}
+#  {{ post.output }}
+#{% endfor %}
