@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 author_profile: true
 ---
 
@@ -11,3 +11,7 @@ author_profile: true
   
 </body>
 </html>
+
+{% for post in site.categories.news %}
+  {{ post.output }}
+{% endfor %}
