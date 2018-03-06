@@ -127,6 +127,7 @@ include:
   - .htaccess
   - _pages
   - ["_pages"]
+  - ["category"]
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
