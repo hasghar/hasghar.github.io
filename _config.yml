@@ -261,7 +261,7 @@ defaults:
       share: true
       related: true
       
- defaults:
+  # defaults:
   # _pages
   - scope:
       path: ""
