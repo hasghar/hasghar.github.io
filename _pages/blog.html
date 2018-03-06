@@ -1,5 +1,9 @@
 ---
-layout: archive-taxonomy
+layout: home
 author_profile: true
 permalink: /blog/
 ---
+
+{% for post in site.posts %}
+  {{ post.output }}
+{% endfor %}
