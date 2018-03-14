@@ -94,7 +94,7 @@ author:
   avatar           : "/assets/images/photo.jpg"
   bio              : "<i>I am a computer scientist working in privacy, cryptography and information security.</i>"
   location         : "Sydney, Australia."
-  email            :
+  email            : "hassan.asghar@mq.edu.au"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
