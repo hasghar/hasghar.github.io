@@ -60,7 +60,7 @@ categories: blog
   </tr>
 </table>
 
-<p>When one wants to publish this data, a first step is always to remove the name column. Once that's done, the dataset looks like the one shown <a href="#fakedatanonames">below</a>. Again, each row still belongs to one individual (even though the name has been removed). So, we shall continue to call it unit record level data.</p>
+<p>When one wants to publish this data, a first step is always to remove the name column. Once that's done, the dataset looks like the one shown <a href="#fakedatanonames">below</a>. Again, each row still belongs to one individual (even though the name has been removed). So, we shall continue to call it unit record level data. Now focus on the suburb of Redfern. </p>
 
 <table id="fakedatanonames" align="center">
   <caption><b>A Fake Dataset with No Names</b></caption>
@@ -98,5 +98,18 @@ categories: blog
     <td>Darlinghurst</td> 
     <td>70-79</td>
     <td>Female</td>
+  </tr>
+</table>
+
+<table id="tabularfake" align="center">
+  <caption><b>A Table for Redfern from the Fake Dataset</b></caption>
+  <tr>
+    <th rowspan="2">Age</th> 
+    <th colspan="2">Gender</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Male</th> 
+    <th>Female</th>
   </tr>
 </table>
