@@ -12,10 +12,10 @@ categories: blog
 
 <h2>Unit Record vs Tabular Data</h2>
 
-<p>The <a href="#fakedata">table below</a> shows a fake dataset which we shall use as an example. This is pretty much the same example used in the paper, except that I have now put fictitious names for each row indicating that the data in that row belongs to that person.</p>
+<p>The <a href="#fakedata">table below</a> shows a fake dataset which we shall use as an example. This is pretty much the same example used in the paper, except that I have now put fictitious names for each row indicating that the data in that row belongs to that person. This representation of the dataset is what can be called <i>unit record data</i>. However, there does not seem to be well defined. For instance, the definition <a href="https://www.cancer.nsw.gov.au/glossary/unit-record-data">here</a> seems to agree with how we have defined it, but the one <a href="https://toolkit.data.gov.au/index.php/Definitions#Unit_Record_and_Integrated_Data">here</a> seems to define it as the most granular level of data (e.g., the age could be exact instead of generalised to 10 year bracket as in the table). Nevertheless, we will consider any dataset presented in the form of the Fake Dataset as unit record level data, i.e., each row containing data from a single individual.</p>
 
 <table id="fakedata" align="center">
-  <caption>A Fake Dataset</caption>
+  <caption><b>A Fake Dataset</b></caption>
   <tr>
     <th>Name</th>
     <th>Suburb</th> 
@@ -54,6 +54,47 @@ categories: blog
   </tr>
   <tr>
     <td>Susan</td>
+    <td>Darlinghurst</td> 
+    <td>70-79</td>
+    <td>Female</td>
+  </tr>
+</table>
+
+<p>When one wants to publish this data, a first step is always to remove the name column. Once that's done, the dataset looks like the one shown <a href="#fakedatanonames">below</a>. Again, each row still belongs to one individual (even though the name has been removed). So, we shall continue to call it unit record level data.</p>
+
+<table id="fakedatanonames" align="center">
+  <caption><b>A Fake Dataset with No Names</b></caption>
+  <tr>
+    <th>Suburb</th> 
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Redfern</td> 
+    <td>20-29</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Redfern</td> 
+    <td>20-29</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Newtown</td> 
+    <td>30-39</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Redfern</td> 
+    <td>20-29</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Surry Hills</td> 
+    <td>40-49</td>
+    <td>Male</td>
+  </tr>
+  <tr>
     <td>Darlinghurst</td> 
     <td>70-79</td>
     <td>Female</td>
