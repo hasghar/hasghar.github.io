@@ -60,7 +60,7 @@ categories: blog
   </tr>
 </table>
 
-<p>When one wants to publish this data, a first step is always to remove the name column. Once that's done, the dataset looks like the one shown <a href="#fakedatanonames">below</a>. Again, each row still belongs to one individual (even though the name has been removed). So, we shall continue to call it unit record level data. Now focus on the suburb of Redfern. </p>
+<p>When one wants to publish this data, a first step is always to remove the name column. Once that's done, the dataset looks like the one shown <a href="#fakedatanonames">below</a>. Again, each row still belongs to one individual (even though the name has been removed). So, we shall continue to call it unit record level data.</p>
 
 <table id="fakedatanonames" align="center">
   <caption><b>A Fake Dataset with No Names</b></caption>
@@ -101,6 +101,8 @@ categories: blog
   </tr>
 </table>
 
+<p>Now focus on the suburb of Redfern. The <a href="#tabularfake">table below</a> shows another way of data representation, which we call the tabular format. Basically, it divides the dataset into parts, in our case gender and age distribution, and shows <i>counts</i> of people that are in each gender-age pair.</p> 
+
 <table id="tabularfake" align="center">
   <caption><b>A Table for Redfern from the Fake Dataset</b></caption>
   <tr>
@@ -112,38 +114,38 @@ categories: blog
     <th>Female</th>
   </tr>
   <tr>
-    <tr>10-19</tr> 
-    <tr>0</tr>
-    <tr>0</tr>
+    <td>10-19</td> 
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
-    <tr>20-29</tr> 
-    <tr>2</tr>
-    <tr>1</tr>
+    <td>20-29</td> 
+    <td>2</td>
+    <td>1</td>
   </tr>
   <tr>
-    <tr>30-39</tr> 
-    <tr>0</tr>
-    <tr>0</tr>
+    <td>30-39</td> 
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
-    <tr>40-49</tr> 
-    <tr>0</tr>
-    <tr>0</tr>
+    <td>40-49</td> 
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
-    <tr>50-59</tr> 
-    <tr>0</tr>
-    <tr>0</tr>
+    <td>50-59</td> 
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
-    <tr>60-69</tr> 
-    <tr>0</tr>
-    <tr>0</tr>
+    <td>60-69</td> 
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
-    <tr>70-79</tr> 
-    <tr>0</tr>
-    <tr>0</tr>
+    <td>70-79</td> 
+    <td>0</td>
+    <td>0</td>
   </tr>
 </table>
