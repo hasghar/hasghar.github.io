@@ -12,9 +12,10 @@ categories: blog
 
 <h2>Unit Record vs Tabular Data</h2>
 
-<p>Table </p>
+<p>The <a href="#fakedata">table below</a> shows a fake dataset which we shall use as an example. This is pretty much the same example used in the paper, except that I have now put fictitious names for each row indicating that the data in that row belongs to that person.</p>
 
-<table id="#fakedata" summary="A Fake Dataset">
+<table id="#fakedata" align="center">
+  <caption>A Fake Dataset</caption>
   <tr>
     <th>Name</th>
     <th>Suburb</th> 
