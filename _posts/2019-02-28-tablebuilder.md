@@ -108,8 +108,42 @@ categories: blog
     <th colspan="2">Gender</th>
   </tr>
   <tr>
-    <th></th>
     <th>Male</th> 
     <th>Female</th>
+  </tr>
+  <tr>
+    <tr>10-19</th> 
+    <tr>0</tr>
+    <tr>0</tr>
+  </tr>
+  <tr>
+    <tr>20-29</th> 
+    <tr>2</tr>
+    <tr>1</tr>
+  </tr>
+  <tr>
+    <tr>30-39</th> 
+    <tr>0</tr>
+    <tr>0</tr>
+  </tr>
+  <tr>
+    <tr>40-49</th> 
+    <tr>0</tr>
+    <tr>0</tr>
+  </tr>
+  <tr>
+    <tr>50-59</th> 
+    <tr>0</tr>
+    <tr>0</tr>
+  </tr>
+  <tr>
+    <tr>60-69</th> 
+    <tr>0</tr>
+    <tr>0</tr>
+  </tr>
+  <tr>
+    <tr>70-79</th> 
+    <tr>0</tr>
+    <tr>0</tr>
   </tr>
 </table>
