@@ -101,7 +101,7 @@ categories: blog
   </tr>
 </table>
 
-<p>Now focus on the suburb of Redfern. The <a href="#tabularfake">table below</a> shows another way of data representation, which we call the tabular format. Basically, it divides the dataset into parts, in our case gender and age distribution, and shows <i>counts</i> of people that are in each gender-age pair.</p> 
+<p>Now focus on the suburb of Redfern. The <a href="#tabularfake">table below</a> shows another way of data representation, which we call the tabular format. Basically, it divides the dataset into parts, in our case gender and age distribution, and shows <i>counts</i> of people that are in each gender-age pair. Notice how you can exactly recreate the three Redfern rows in the unit record level <a href="#fakedatanonames">representation</a>, simply by copying the number of times each tuple (Redfern, Age, Gender) appears. Take away here is that even though the data is merely a "table" rather than in unit record format, it is still possible to interconvert them for sub-populations of interest (Redfern in our case) or for the entire database (by constructing similar tables for other suburbs).</p> 
 
 <table id="tabularfake" align="center">
   <caption><b>A Table for Redfern from the Fake Dataset</b></caption>
