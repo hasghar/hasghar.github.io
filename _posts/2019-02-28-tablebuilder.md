@@ -14,7 +14,7 @@ categories: blog
 
 <p>The <a href="#fakedata">table below</a> shows a fake dataset which we shall use as an example. This is pretty much the same example used in our paper, except that I have now put fictitious names for each row indicating that the data in that row belongs to that person. This representation of the dataset is what is called <i>unit record data</i>. However, the term "unit record data" does not seem to be well defined. For instance, the definition <a href="https://www.cancer.nsw.gov.au/glossary/unit-record-data">here</a> agrees with how we have defined it, but the one <a href="https://toolkit.data.gov.au/index.php/Definitions#Unit_Record_and_Integrated_Data">here</a> seems to define it as the most granular level of data (e.g., the age could be exact instead of generalised to 10 year bracket as in the table). Nevertheless, we will consider any dataset presented in the form of the Fake Dataset as unit record level data, i.e., each row containing data from a single individual, since there is no limit to how granular data could be.</p>
 
-<table id="fakedata" align="center" style="width:200px">
+<table id="fakedata" align="center" style="width:400px">
   <caption><b>A Fake Dataset</b></caption>
   <tr>
     <th>Name</th>
@@ -62,7 +62,7 @@ categories: blog
 
 <p>When one wants to publish this data, a first step is always to remove the name column. Once that's done, the dataset looks like the one shown <a href="#fakedatanonames">below</a>. Again, each row still belongs to one individual; even though the name has been removed. So, we shall continue to call it unit record level data.</p>
 
-<table id="fakedatanonames" align="center">
+<table id="fakedatanonames" align="center" style="width:400px">
   <caption><b>A Fake Dataset with No Names</b></caption>
   <tr>
     <th>Suburb</th> 
@@ -103,7 +103,7 @@ categories: blog
 
 <p>Now focus on the suburb of Redfern. The <a href="#tabularfake">table below</a> shows another way of data representation, which we call the tabular format. Basically, it divides the dataset into parts, in our case gender and age distribution, and shows <i>counts</i> of people that are in each gender-age pair. Notice how you can exactly recreate the three Redfern rows in the unit record level <a href="#fakedatanonames">representation</a>, simply by copying the number of times each tuple (Redfern, Age, Gender) appears. The take away here is that even though the data is formatted as a table rather than in unit record format, it is still possible to convert the data in the latter format for sub-populations of interest (Redfern, in our case) or for the entire database (by constructing similar tables for other suburbs).</p> 
 
-<table id="tabularfake" align="center">
+<table id="tabularfake" align="center" style="width:400px">
   <caption><b>A Table for Redfern from the Fake Dataset</b></caption>
   <tr>
     <th rowspan="2">Age</th> 
@@ -156,7 +156,7 @@ categories: blog
 
 <p>Our remaining option then is to release some sort of tabular version of the data. We can build a tool that allows the user to construct different tables from the Fake Dataset (with No Names). But we have seen that it is easy to interchange between the tabular and unit record data format. Thus, something more advanced needs to be done. For this, we consider a dataset with more rows than the Fake Dataset, whose Redfern sub-population statistics is given by table T1 below:
 
-<table id="tabularfakemoredata" align="center">
+<table id="tabularfakemoredata" align="center" style="width:400px">
   <caption><b>T1: A Fake Table for Redfern</b></caption>
   <tr>
     <th rowspan="2">Age</th> 
