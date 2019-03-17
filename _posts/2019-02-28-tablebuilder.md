@@ -209,7 +209,7 @@ Now even though this can still be converted into unit record format, notice that
   <caption><b>Another Fake Table for Redfern</b></caption>
   <tr>
     <th rowspan="2">Age</th> 
-    <th colspan="2" align="right">Gender</th>
+    <th colspan="2" align="center">Gender</th>
   </tr>
   <tr>
     <th>Male</th> 
@@ -230,5 +230,5 @@ Using this table and computing the <i>difference</i> between the counts reveals 
 
 <h2>The TBE Algorithm</h2>
 <p>
-The failure of the above techniques then led to "same contributor, same noise" technique used in the TableBuilder. Under this rule, if two queries (cells in a table) are satisfied by the exact same set of contributors, then intead of adding fresh noise, the same noise will be added. This immediately renders the above-mentioned averaging attack useless. TBC.
+The failure of the above techniques then led to the "same contributor, same noise" technique used in the TBE algorithm. Under this rule, if two queries (cells in a table) are satisfied by the exact same set of contributors, then intead of adding fresh noise, the same noise will be added. This immediately renders the above-mentioned averaging attack useless.
 </p>
