@@ -226,7 +226,7 @@ Using this table and computing the <i>difference</i> between the counts reveals 
 
 <p>To circumvent this, another strategy is that, in addition to suppression, <i>perturb</i> the counts (all counts; not just low counts) by adding random noise. The analysts thus sees noisy counts and cannot carry out the differencing attack above. But notice that we can't add completely random noise, or else the output will be junk and useless for legitimate purposes. So, we can decide to add random noise within a fixed interval. Let's assume this is +/-5. Thus, instead of reporting the actual count, we would sample "fresh" noise at random, add to the count and return the <i>noisy count</i> as an entry in the table. The problem with this is that the analyst can create a table multiple times. If fresh noise is added to the count each time then one can launch an <i>averaging attack</i>. Why does it work? Notice that the noise is in the interval +/-5. Since the noise is sampled randomly each time, after a certain number of trials there will be an almost equal distribution of positives and negatives. We can add all the noisy counts, and divide it by the number of times the same table was requested to "average out" the error.</p>
 
-<img src="pic_trulli.jpg" alt="Italian Trulli">
+<img src="https://hasghar.github.io/assets/images/photo.jpg" alt="Averaging Attack">
 
 <h2>The TBE Algorithm</h2>
 <p>
