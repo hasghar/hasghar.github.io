@@ -231,6 +231,7 @@ Using this table and computing the <i>difference</i> between the counts reveals 
 <h2>The TBE Algorithm</h2>
 <p>
 The failure of the above techniques then led to the "same contributor, same noise" technique used in the TBE algorithm. Under this rule, if two queries (cells in a table) are satisfied by the exact same set of individuals (called contributors), then intead of adding fresh noise, the same noise will be added. This immediately renders the above-mentioned averaging attack useless. However, what we show in our paper is that there is another way to launch an averaging attack. To see this, let's assume that the perturbation parameter in TBE is +/-5. Consider Table <a href="#tabularfakemoredata">T1</a> again. If we ask TBE (via the TableBuilder tool) the count of people aged 30-39 and 40-49, we would get something like this:
+</p>
 
 <table id="tablebuilderoutput" align="center" style="width:400px">
   <caption><b>T2: Example TableBuilder Output</b></caption>
@@ -258,6 +259,10 @@ The failure of the above techniques then led to the "same contributor, same nois
     <td>121</td>
   </tr>
 </table>
+
+<p>
+The first thing to note here is that the counts in each cell are noisy. The second thing is the introduction of the row titled "Total." This basically corresponds to the age range 30-49. Importantly, since the contributors in the age range 30-49 are not the same as the contributors in the age ranges 30-39 and 40-49, the noise added to the <i>total cells</i> is different! Note further that this observation holds even if one of the cells 30-39 or 40-49 (under say the Female column) was suppressed (due to having a low non-zero count), since the total would include the other cell count which is not suppressed.  
 </p>
 
-The first thing to note here is that the counts in each cell are noisy. The second thing is the introduction of the row titled "Total." This basically corresponds to the age range 30-49. Importantly, since the contributors in the age range 30-49 are not the same as the contributors in the age ranges 30-39 and 40-49, the noise added to the <i>total cells</i> is different! Note further that this observation holds even if one of the cells 30-39 or 40-49 (under say the Female column) was suppressed (due to having a low non-zero count), since the total would include the other cell count which is not suppressed.  
+<p>
+Now suppose that the analyst is interested in knowing the true count under (Redfern, 70-79, Male) from Table T1 with access to only the TBE algorithm. The TBE essentially suppresses this small count and returns 0. The analyst can try something like this. Let <b>M</b> be the total number of males in Redfer (i.e., across all ages). The analyst can ask two queries: (10-19, 20-29,...,50-59) and (60-69, 70-79), receiving two tables from the TBE algorithm. Let <b>M1</b> the total number of males in the age range (10-59) and let <b>M2</b> denote the total number of males in the age range (60-79). Through the two tables, the analysts obtains noisy versions of these counts (through the total row). Note that <b>M</b> = <b>M1</b> + <b>M2</b>
