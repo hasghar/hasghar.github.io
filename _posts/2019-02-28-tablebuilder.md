@@ -205,7 +205,7 @@ categories: blog
 
 Now even though this can still be converted into unit record format, notice that if the target individual of the attack is say a Redfern male in the age range 40-49, then the said individual "hides" behind 39 other individuals in the table. Based on this data table, the attacker has no way to distinguish between the 40 individuals. Thus, high counts seem reasonably safe to publish. The areas of concern are low counts, e.g., rows Age 20-29 and Age 70-79 in table T1. One straightforward way to protect privacy is to suppress low counts. You decide that any table entry that is (say) less than or equal to 3 will be suppressed to 0. Thus, there is no fear of identity breach if the anaylst (user of the tool) can't tell if a count is an actual 0 or not. So, using this technique, the count of 3 appearing in the Age 70-79 row and Male column of table <a href="#tabularfakemoredata">T1</a> would be set to 0, making no distincution between the actual 0 (corresponding to the Female column) and this 0. Alas, this is problematic too. For instance, the analyst can use our tool to create another table, this time only asking about people in the Age range 60-79, as shown below:
 
-<table id="tabular60to79" align="center" border="1" style="width:400px">
+<table id="tabular60to79" align="center" style="width:400px">
   <caption><b>Another Fake Table for Redfern</b></caption>
   <tr>
     <th rowspan="2">Age</th> 
@@ -230,5 +230,34 @@ Using this table and computing the <i>difference</i> between the counts reveals 
 
 <h2>The TBE Algorithm</h2>
 <p>
-The failure of the above techniques then led to the "same contributor, same noise" technique used in the TBE algorithm. Under this rule, if two queries (cells in a table) are satisfied by the exact same set of contributors, then intead of adding fresh noise, the same noise will be added. This immediately renders the above-mentioned averaging attack useless.
+The failure of the above techniques then led to the "same contributor, same noise" technique used in the TBE algorithm. Under this rule, if two queries (cells in a table) are satisfied by the exact same set of contributors, then intead of adding fresh noise, the same noise will be added. This immediately renders the above-mentioned averaging attack useless. However, what we show in our paper is that there is another way to launch an averaging attack. To see this, let's assume that the perturbation parameter in TBE is +/-5. Consider Table <a href="#tabularfakemoredata">T1</a> again. If we ask TBE (via the TableBuilder tool) the count of people aged 30-39 and 40-49, we would get something like this:
+
+<table id="tablebuilderoutput" align="center" style="width:400px">
+  <caption><b>T2: Example TableBuilder Output</b></caption>
+  <tr>
+    <th rowspan="2">Age</th> 
+    <th colspan="2" align="right">Gender</th>
+  </tr>
+  <tr>
+    <th>Male</th> 
+    <th>Female</th>
+  </tr>
+  <tr>
+    <td>30-39</td> 
+    <td>37</td>
+    <td>71</td>
+  </tr>
+  <tr>
+    <td>40-49</td> 
+    <td>44</td>
+    <td>53</td>
+  </tr>
+  <tr>
+    <td><b>Total</b></td> 
+    <td>74</td>
+    <td>121</td>
+  </tr>
+</table>
 </p>
+
+
