@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Paper accepted in PETS"
+title:  "Paper accepted at PETS"
 categories: news
 ---
 
