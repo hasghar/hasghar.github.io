@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Attack"
+title:  "Averaging Attacks on TableBuilder"
 categories: blog
 ---
 
