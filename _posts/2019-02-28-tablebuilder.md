@@ -154,7 +154,56 @@ categories: blog
 
 <p>Now imagine that we wish to build a tool that allows access to this dataset (so that something useful can be learned from the data, e.g., average age of a Redfern inhabitant). But, we want the identity of the people hidden for privacy reasons. We therefore can't just build a tool which downloads the entire Fake Dataset by simply clicking a button. We would be tempted to release the <a href="#fakedatanonames">Fake Dataset with No Names</a>. But notice that even though names have been removed, most of the rows in the dataset are unique (in fact, all except the first two). This means that an attacker knowing someone's age, gender and residential location can easily attach an identity to the corresponding row of the data. Is "most rows being unique" just an artefact of this (fake) dataset? or is it true in general? It turns out that it is indeed <a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">true</a> of real datasets with moderately large dimension (number of columns). This has been known for a long time, and I won't go into the details. Interested readers can click the link or <a href ="https://arxiv.org/pdf/cs/0610105.pdf">many</a> <a href="http://science.sciencemag.org/content/347/6221/536.full">other</a> <a href="https://arxiv.org/abs/1712.05627">studies</a> demonstrating such "re-identification" attacks.</p>
 
-<p>Your remaining option then is to release some sort of tabular version. You can build a tool that allows the user to construct different tables from the Fake Dataset (with No Names). But we have seen that it is easy to interchange between the tabular and unit record data format. Thus, something more advanced needs to be done. One straightforward way is to suppress low counts. You decide that any table entry that is exactly 1 will be suppressed to 0. Thus, there is no fear of identity breach if the anaylst (user of your tool) can't tell if a count is an actual 0 or not. Thus, using this technique, the count of 1 appearing in the 20-29 row and Female column (Liz's data) of the table <a href="#tabularfake">above</a> would be set to 0. Alas, this is problematic too. For instance, the analyst can use your tool to create two tables. One table for the count of people in Redfern; and another for the number of males in Redfern. The <i>difference</i> between the two is exactly Liz's data. This kind of attack is generally called a differencing attack, for obvious reasons.</p>
+<p>Our remaining option then is to release some sort of tabular version of the data. We can build a tool that allows the user to construct different tables from the Fake Dataset (with No Names). But we have seen that it is easy to interchange between the tabular and unit record data format. Thus, something more advanced needs to be done. For this, we consider a dataset with more rows than the Fake Dataset, whose Redfern sub-population statistics is given by table T1 below:
+
+<table id="tabularfakemoredata" align="center">
+  <caption><b>T1: A Fake Table for Redfern</b></caption>
+  <tr>
+    <th rowspan="2">Age</th> 
+    <th colspan="2">Gender</th>
+  </tr>
+  <tr>
+    <th>Male</th> 
+    <th>Female</th>
+  </tr>
+  <tr>
+    <td>10-19</td> 
+    <td>90</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>20-29</td> 
+    <td>2</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>30-39</td> 
+    <td>35</td>
+    <td>73</td>
+  </tr>
+  <tr>
+    <td>40-49</td> 
+    <td>40</td>
+    <td>51</td>
+  </tr>
+  <tr>
+    <td>50-59</td> 
+    <td>100</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>60-69</td> 
+    <td>31</td>
+    <td>73</td>
+  </tr>
+  <tr>
+    <td>70-79</td> 
+    <td>3</td>
+    <td>0</td>
+  </tr>
+</table>
+
+One straightforward way is to suppress low counts. You decide that any table entry that is exactly 1 will be suppressed to 0. Thus, there is no fear of identity breach if the anaylst (user of your tool) can't tell if a count is an actual 0 or not. Thus, using this technique, the count of 1 appearing in the 20-29 row and Female column (Liz's data) of the table <a href="#tabularfake">above</a> would be set to 0. Alas, this is problematic too. For instance, the analyst can use your tool to create two tables. One table for the count of people in Redfern; and another for the number of males in Redfern. The <i>difference</i> between the two is exactly Liz's data. This kind of attack is generally called a differencing attack, for obvious reasons.</p>
 
 <p>Slightly more complicated strategy is to <i>perturb</i> those counts by adding random noise. We can't add completely random noise, or else the output will be junk and useless for legitimate purposes. So, you decide to add random noise within a fixed interval. Let's assume this is +/-5. Thus, instead of reporting 2 or 1, you would sample "fresh" noise at random, add to the count and return the <i>noisy count</i> as an entry in the table (for this demonstration, let's assume that we are happy with negative numbers being returned). The problem with this is that the analyst can create a table multiple times. If fresh noise is added to the count each time then one can launch an <i>averaging attack</i>. Why does it work? Notice that the noise is in the interval +/-5. Since the noise is sampled randomly each time, after a certain number of trials there will be an almost equal distribution of positives and negatives. We can add all the noisy counts, and divide it by the number of times the same table was requested to "average out" the error.</p>
 
