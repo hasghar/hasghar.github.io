@@ -6,7 +6,7 @@ categories: blog
 
 Authors (in Alphabetic Order): 
 
-Hassan Asghar (Macquarie University), Farhad Farokhi (University of Melbourne), 
+Hassan Jameel Asghar (Macquarie University), Farhad Farokhi (University of Melbourne), 
 Dali Kaafar (Macquarie University), Ben Rubinstein (University of Melbourne).<sup><a href="#footnote1" id="thanks">1</a></sup>
 
 The Australian government is exploring the use of contact tracing mobile apps as a tool for public health officials and communities to fight the spread of the COVID-19 pandemic. 
