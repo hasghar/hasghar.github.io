@@ -17,8 +17,7 @@ There are however privacy concerns and implications if TraceTogether or similar 
 
 Time is critical in the fight against the spread of COVID-19, and so building a contact tracing app from scratch, with a completely new design, is not an option. Fortunately Singapore has announced its intention to open-source the TraceTogether app. We take the pragmatic view of assessing the privacy of TraceTogether while providing recommendations on how its privacy can be enhanced without drastically changing its design and hence enabling timely implementation. These recommendations can be implemented as enhancements to the current TraceTogether app’s code.
 
-
-A Review of TraceTogether:
+<h2>A Review of TraceTogether:</h2>
 
 TraceTogether relies on Bluetooth to exchange information between TraceTogether users including Bluetooth signal strength (a proxy for distance between users), time, and (temporary) user IDs. This information is locally logged (on-device) by the app in an encrypted form. When a user installs the TraceTogether app, they submit their mobile number to the centralised authority (Ministry of Health server in the case of Singapore). This mobile number together with a newly generated user ID is stored on the server. The server, using its private key, generates temporary IDs, which are periodically refreshed, and transmits them to the corresponding user. These temporary IDs are exchanged between TraceTogether users when in close proximity. 
 
