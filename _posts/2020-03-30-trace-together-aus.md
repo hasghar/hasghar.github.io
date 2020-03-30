@@ -7,7 +7,7 @@ categories: blog
 Authors (in Alphabetic Order): 
 
 Hassan Asghar (Macquarie University), Farhad Farokhi (University of Melbourne), 
-Dali Kaafar (Macquarie University), Ben Rubinstein (University of Melbourne), Dinusha Vatsalan (CSIRO Data61).
+Dali Kaafar (Macquarie University), Ben Rubinstein (University of Melbourne), Dinusha Vatsalan (CSIRO Data61).<sup><a href="#footnote1" id="thanks">1</a></sup>
 
 The Australian government is exploring the use of contact tracing mobile apps as a tool for public health officials and communities to fight the spread of the COVID-19 pandemic. 
 “Digital methods can be also used to assist in identifying contacts and to be able to shut those (tracing) issues down as was practiced in Singapore. And so these delivery methods are also being looked at by the Commonwealth, and we're making a lot of progress there." Scott Morrisson, Prime Minister of Australia March 24, 2020. 
@@ -47,4 +47,7 @@ The app can be tweaked to provide more privacy from the Central Authority: The t
 Future versions of the app need to be more decentralized: The server can push the temporary ID of infected users to the apps and other users can locally determine if they have been in contact with them. If the IDs are locally and randomly generated, they are not linkable to true identities. This way the server does not know the identities of the users who were in close proximity with the infected user. This provides higher privacy against the server. This is not an easy fix and requires a fundamental change in the app’s design which might not be possible to be implemented rapidly.
 
 Future releases of anonymized data logs must be restricted: An important aspect of data gathered by the server is future use by epidemiologists and policy makers. Although the information seems innocuous, it can be very sensitive and reveal a lot about the users. So it should not be shared publicly even if anonymized. This is because a large percentage of the people might share their data. Even the contact graph, without locations, timestamps, phone numbers or explicit identities, can be linked to other data sources enabling user reidentification. 
+
+<sup id="footnote1">1. The authors thank Vanessa Teague for fruitful discussions.
+<a href="#thanks">↩</a></sup>
 
