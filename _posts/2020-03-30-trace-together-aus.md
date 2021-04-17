@@ -3,13 +3,14 @@ layout: single
 title:  "On the Privacy of TraceTogether, the Singaporean COVID-19 Contact Tracing Mobile App and Recommendations for Australia"
 categories: blog
 ---
-
+<p>
 Authors (in Alphabetic Order): 
 
 Hassan Jameel Asghar (Macquarie University), Farhad Farokhi (University of Melbourne), 
 Dali Kaafar (Macquarie University), Ben Rubinstein (University of Melbourne).<sup><a href="#footnote1" id="thanks">1</a></sup>
 
 The Australian government is exploring the use of contact tracing mobile apps as a tool for public health officials and communities to fight the spread of the COVID-19 pandemic. 
+</p>
 “Digital methods can be also used to assist in identifying contacts and to be able to shut those (tracing) issues down as was practiced in Singapore. And so these delivery methods are also being looked at by the Commonwealth, and we're making a lot of progress there." Scott Morrison, Prime Minister of Australia March 24, 2020. 
 Earlier this month, as one of the countries that has so far managed to keep the pandemic under control, Singapore announced the release of mobile app “TraceTogether.” The app tracks the interactions between those diagnosed with coronavirus and the wider community. <a href="https://www.afr.com/politics/federal/singapore-coronavirus-app-on-approval-fast-track-20200324-p54dhl">Australia is currently fast-tracking the review process for TraceTogether to be adopted and deployed across the country</a>.    
 
