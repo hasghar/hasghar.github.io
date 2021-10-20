@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Paper on Attribute Inference Attacks in Machine Learning accepted at IEEE Euro S&P 2021"
+title:  "Paper on attribute inference attacks in machine learning accepted at IEEE Euro S&P 2021"
 categories: news
 ---
 
