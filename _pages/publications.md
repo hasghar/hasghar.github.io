@@ -18,13 +18,13 @@ For a full and up-to-date list, please see my [Google Scholar profile](https://s
 
 ## 2023
 
-- [Unintended Memorization and Timing Attacks in Named Entity Recognition Models](https://arxiv.org/abs/2211.02245) 
+- [Unintended Memorization and Timing Attacks in Named Entity Recognition Models](https://arxiv.org/abs/2211.02245)  
 RS Ali, BZH Zhao, HJ Asghar, T Nguyen, ID Wood, D Kaafar.  
 PETS 2023.
 
 ## 2022
 
-- [SoK: use of cryptography in malware obfuscation](https://arxiv.org/abs/2212.04008) 
+- [SoK: use of cryptography in malware obfuscation](https://arxiv.org/abs/2212.04008)  
 H Asghar, B Zhao, M Ikram, DLG Nguyen, D Kaafar, S Lamont, D Coscia.  
 arxiv preprint arXiv:2212.04008.
 
@@ -36,11 +36,10 @@ PETS 2022.
 Z Lu, HJ Asghar, MA Kaafar, D Webb, P Dickinson.   
 IEEE Transactions on Information Forensics and Security
 
+## Older 
+
 <html>
 <body>
-
-<h1>Publications</h1>
-<p>For a full and up-to-date list, please see my <a href="https://scholar.google.com.au/citations?user=qAW2S9rkzfMC&hl=en">Google Scholar profile</a>.</p>
 
 <h2>Journals</h2>
 <ul>
