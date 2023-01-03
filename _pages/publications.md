@@ -22,7 +22,7 @@ For a full and up-to-date list, please see my [Google Scholar profile](https://s
 RS Ali, BZH Zhao, HJ Asghar, T Nguyen, ID Wood, D Kaafar.  
 PETS 2023.
 
-# 2022
+## 2022
 
 - [SoK: use of cryptography in malware obfuscation](https://arxiv.org/abs/2212.04008) 
 H Asghar, B Zhao, M Ikram, DLG Nguyen, D Kaafar, S Lamont, D Coscia.  
