@@ -18,22 +18,22 @@ For a full and up-to-date list, please see my [Google Scholar profile](https://s
 
 ## 2023
 
-- [Unintended Memorization and Timing Attacks in Named Entity Recognition Models](https://arxiv.org/abs/2211.02245)  
-RS Ali, BZH Zhao, HJ Asghar, T Nguyen, ID Wood, D Kaafar.  
+- [**Unintended Memorization and Timing Attacks in Named Entity Recognition Models**](https://arxiv.org/abs/2211.02245)  
+RS Ali, BZH Zhao, **HJ Asghar**, T Nguyen, ID Wood, D Kaafar.  
 PETS 2023.
 
 ## 2022
 
-- [SoK: use of cryptography in malware obfuscation](https://arxiv.org/abs/2212.04008)  
-H Asghar, B Zhao, M Ikram, DLG Nguyen, D Kaafar, S Lamont, D Coscia.  
+- [**SoK: use of cryptography in malware obfuscation**](https://arxiv.org/abs/2212.04008)  
+**HJ Asghar**, B Zhao, M Ikram, DLG Nguyen, D Kaafar, S Lamont, D Coscia.  
 arxiv preprint arXiv:2212.04008.
 
-- [Making the most of parallel composition in differential privacy](https://arxiv.org/abs/2109.09078)  
-J Smith, HJ Asghar, G Gioiosa, S Mrabet, S Gaspers, P Tyler.  
+- [**Making the most of parallel composition in differential privacy**](https://arxiv.org/abs/2109.09078)  
+J Smith, **HJ Asghar**, G Gioiosa, S Mrabet, S Gaspers, P Tyler.  
 PETS 2022.
 
-- [A Differentially Private Framework for Deep Learning with Convexified Loss Functions](https://ieeexplore.ieee.org/abstract/document/9762326)  
-Z Lu, HJ Asghar, MA Kaafar, D Webb, P Dickinson.   
+- [**A Differentially Private Framework for Deep Learning with Convexified Loss Functions**](https://ieeexplore.ieee.org/abstract/document/9762326)  
+Z Lu, **HJ Asghar**, MA Kaafar, D Webb, P Dickinson.   
 IEEE Transactions on Information Forensics and Security
 
 ## Older 
