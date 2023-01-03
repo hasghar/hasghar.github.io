@@ -12,8 +12,6 @@ defaults:
       author_profile: true
 ---
 
-# Publications
-
 For a full and up-to-date list, please see my [Google Scholar profile](https://scholar.google.com.au/citations?user=qAW2S9rkzfMC&hl=en).
 
 ## 2023
