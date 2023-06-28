@@ -18,6 +18,10 @@ For a full and up-to-date list, please see my [Google Scholar profile](https://s
 
 ## 2023
 
+- [**Those Aren't Your Memories, They're Somebody Else's: Seeding Misinformation in Chat Bot Memories**](https://arxiv.org/abs/2304.05371)
+C Atkins, BZH Zhao, **HJ Asghar**, ID Wood, D Kaafar.
+ACNS 2023.
+
 - [**Unintended Memorization and Timing Attacks in Named Entity Recognition Models**](https://arxiv.org/abs/2211.02245)  
 RS Ali, BZH Zhao, **HJ Asghar**, T Nguyen, ID Wood, D Kaafar.  
 PETS 2023.
