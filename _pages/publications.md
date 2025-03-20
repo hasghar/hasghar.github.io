@@ -16,7 +16,35 @@ defaults:
 
 For a full and up-to-date list, please see my [Google Scholar profile](https://scholar.google.com.au/citations?user=qAW2S9rkzfMC&hl=en).
 
+## 2025
+
+- [**Practical, Private Assurance of the Value of Collaboration via Fully Homomorphic Encryption**](https://arxiv.org/abs/2310.02563)
+**HJ Asghar**, Z Lu, Z Zhao, D Kaafar.
+PETS 2025.
+
+- [**Efficient Verifiable Differential Privacy with Input Authenticity in the Local and Shuffle Model**](https://arxiv.org/abs/2406.18940)
+T Bontekoe, **HJ Asghar**, F Turkmen.
+PETS 2025.
+
+- [**The Qudit Cirq Library: An Extension of Google's Cirq Library for Qudits**](https://hasghar.github.io/publications/)
+S Kushnarev, **HJ Asghar**.
+Technical report 2025.
+
+## 2024
+
+- [**ConvoCache: Smart Re-Use of Chatbot Responses**](https://arxiv.org/abs/2406.18133)
+C Atkins, I Wood, MA Kaafar, **HJ Asghar**, N Basta, M Kepkowski. 
+Interspeech 2024.
+
+- [**On the Robustness of Malware Detectors to Adversarial Samples**](https://arxiv.org/abs/2408.02310)
+M Salman, BZH Zhao, **HJ Asghar**, M Ikram, S Kaushik, MA Kaafar.
+SECAI 2024.
+
 ## 2023
+
+- [**Use of cryptography in malware obfuscation**](https://arxiv.org/abs/2212.04008)
+**HJ Asghar**, BZH Zhao, M Ikram, G Nguyen, D Kaafar.
+Journal of Computer Virology and Hacking Techniques 2024.
 
 - [**Those Aren't Your Memories, They're Somebody Else's: Seeding Misinformation in Chat Bot Memories**](https://arxiv.org/abs/2304.05371)
 C Atkins, BZH Zhao, **HJ Asghar**, ID Wood, D Kaafar.
